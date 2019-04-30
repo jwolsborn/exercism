@@ -3,6 +3,9 @@ pub fn encode(n: u64) -> String {
 	let mut val = n;
 	let mut val2 = n;
 	let mut val3 = n;
+	
+	//definetly not a solution I'm proud of.  I started to check the number is greater than a quintillion and work down using divion
+	//and modulo then push the word onto the string solution.  For 1-90  I have a helper function that adds those.
 
 	if n == 0 {
 		solution = "zero".to_string();
@@ -192,7 +195,7 @@ pub fn encode(n: u64) -> String {
 
 	solution.trim().to_string() 
 }
-
+//helper function that adds the words for 1-90
 fn word(n: u64) -> String {
 	
 	match n {

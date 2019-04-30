@@ -1,5 +1,6 @@
 pub fn build_proverb(list: &[&str]) -> String {
 	
+	//uses push_str to add to each line of the proverb.  special condition for a list of length 1	
 	let mut final_string = String::new();
 	
 	if list.len() == 1{

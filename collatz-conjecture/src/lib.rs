@@ -1,5 +1,6 @@
 pub fn collatz(n: u64) -> Option<u64> {
-	
+	//simply uses modulo and divides as the algorithm suggests
+	//uses a match to see if None was passed	
 	match n {
 	0 => None,
 	_ => {
